@@ -1,0 +1,222 @@
+body
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.math-container
+{
+    padding:10px;
+    /* margin:60px 20px 20px 80px; */
+    margin-top:40px;
+    width:600px;
+    box-sizing: border-box;
+    background-color: #9DD2EA;
+  
+
+}
+.game-container
+{
+    /* background-color: chocolate; */
+    padding: 10px;
+    margin:10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     box-sizing: border-box;
+      position: relative; 
+    
+    
+}
+
+.score-feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-bottom: 15px;
+  padding: 0 20px;
+  position: relative;  
+}
+
+.feedback {
+    height: 30px; /* Adjust based on font size */
+    /* background-color: aqua; */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    padding:5px;
+     flex: 1;
+    }
+.feedback.wrong
+{
+    background-color: red;
+}
+.feedback.correct
+{
+    background-color: green;
+    
+}
+
+
+#para-el {
+  
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+
+    background-color: rgb(190, 205, 50);
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+  
+}
+
+.question-div
+{
+    background-color:#9DA0EA;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    height:150px;
+    margin:10px;
+   
+    box-sizing: border-box;
+}
+.question-div h1
+{
+     font-size:4.5rem;
+     margin-top:30px;
+}
+
+#correct-answer
+{
+    width:100%;
+    border-radius: 5px;
+    padding:20px 10px;
+    font-size:1rem;
+    background-color: #B481D9;
+    
+}
+.button-grid
+{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #3f0c63; */
+    width:100%;
+    margin-top:20px;
+}
+button
+{
+    border-radius: 5px;
+    padding:20px 10px;
+    font-size:1rem;
+    border: none;
+    cursor: pointer;
+    
+}
+.selectBtn
+{
+    width:80px;  
+    height:90px; 
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+#start-btn
+{
+    margin-top:20px;
+    padding:15px;
+     background-color: rgb(174, 226, 247);
+    
+}
+#start-btn:hover
+{
+    background-color: #B481D9;
+}
+.feedback
+{
+     width:70px;
+}
+
+
+
+
+#countdown
+{
+    
+
+    background-color: rgb(190, 205, 50);
+    display: none;
+    
+    padding:12px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 250px;
+
+
+}
+#game-over
+{
+    width:350px;
+    height:200px;
+    background-color: #F38364;
+    position:absolute;
+    display: none;
+    padding:20px;
+    
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    white-space: pre-line; 
+
+    
+    /* display: none; */
+}
+
+.selectBtn:focus,
+.selectBtn:active,
+.selectBtn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #f1f1f1 !important;
+  color: inherit !important;
+}
+
+.selectBtn::-moz-focus-inner {
+  border: 0;
+}
+
+.selectBtn:focus-visible {
+  outline: none !important;
+}
+.selectBtn.selected {
+  background-color: #9C89F6 !important;
+  color: white;
+}
+
+/* @media (hover: none) and  (pointer: coarse){
+  .selectBtn:hover {
+    background-color: transparent !important;
+  }
+} */
+
+@media (hover: hover) and (pointer: fine) {
+  .selectBtn:hover {
+    background-color: #9C89F6;
+  }
+}

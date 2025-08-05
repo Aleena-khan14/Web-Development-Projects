@@ -1,0 +1,180 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    color:white;
+    background-color: rgb(18, 18, 75);
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content at top */
+    padding-top: 40px;
+   
+}
+.ToDoList-container
+{
+    
+    margin:20px;
+    padding:20px;
+    /* display: flex;
+    flex-direction: column; */
+    width:100%;
+    max-width:600px;
+    min-width: 300px;
+    box-sizing: border-box;
+     border: 1px solid wheat;
+    
+}
+.heading
+{
+    display: flex;
+    align-items: center;
+    gap:50px;
+    flex-wrap: wrap;
+}
+.left-side
+{
+    display: flex;
+    flex-direction: column;
+}
+.progress-stats
+{   
+    margin-top: 30px;
+    border-radius: 50%;
+    background-color: rgb(96, 17, 170);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+     min-width: 30px;
+    min-height: 30px;
+    max-width: 100px;
+    max-height: 100px;
+}
+.progress-bar
+{
+    background-color: rgb(31, 31, 95);
+    height:15px;
+    width:300px;
+    border-radius: 40px;
+}
+.progress-fill
+{
+    background-color:#34D0D5;
+    height:15px;
+    width:0;
+    transition: width 0.4s ease;
+    border-radius: 40px;
+
+}
+
+
+
+
+.todoList-items
+{
+    display: flex;
+    
+    gap:10px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    
+}
+.todoList-items input
+{
+      flex: 1;
+    padding:10px;
+    border-radius: 10px;
+    background-color: #171C48;
+    color: white;
+    font-size:1rem;
+}
+
+
+
+.completed
+{
+    text-decoration: line-through;
+    opacity:0.7;
+    color:#34D0D5;
+}
+.check-btn.completed {
+  color: rgb(126, 33, 33);
+  text-decoration: none;
+
+}
+
+#add-btn
+{
+   padding: 10px 16px;
+    background-color: rgb(78, 27, 136);
+    color:white;
+     border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#ul-el
+{
+    list-style: none;
+   
+    /* height:40px; */
+    background-color: blue;
+    box-sizing: border-box;
+    padding-left: 0;
+    width:100%;
+    margin:0;
+   
+    
+    
+}
+
+
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+   background-color: rgb(18, 18, 75);
+    color: white;
+}
+
+li > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.delete-btn {
+
+  transition: color 0.2s ease;
+}
+
+.delete-btn:active {
+  color: rgb(119, 25, 25);
+}
+
+.check-btn, .delete-btn {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media (max-width:530px)
+{
+    
+
+    .progress-stats
+    {
+        width:50px;
+        height:50px;
+        line-height: 50px;
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+}
+

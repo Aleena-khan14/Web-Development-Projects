@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container">
+       
+            <form id="form-id" action="#">
+                <h1>MOI Portal</h1>
+                 <div class="form-grid">
+                    
+                 <div class="form-row">
+                <label for="destination" >Destination:</label>
+                 <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+                </div>
+                
+
+
+
+                <div class="form-row">
+                <label for="flightype" >Flight type:</label>
+                <select name="flightype" id="flightype" required>
+                    <option value="" selected disabled>Choose Flight Type</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Cargo">Cargo</option>
+                    <option value="Medical Evacuation">Medical Evacuation</option>
+                </select>
+                </div>
+                
+                <div class="form-row">
+                    <label for="travelCapacity" >Travel Capacity:</label>
+                     <select name="travelCapacity" id="travelCapacity" required>
+                    <option value="" selected disabled>Choose travel Capacity</option>
+                    <option value="5-to-15k">5-to-15k</option>
+                    <option value="15-to-30">15-to-30</option>
+                    <option value="0-to-80">0-to-80</option>
+                    <option value="40-to-170">40-to-170</option>
+                </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="cargoCapacity" >Cargo Capacity:</label>
+                     <select name="cargoCapacity" id="cargoCapacity" required>
+                    <option value="" selected disabled>Choose Cargo Capacity</option>
+                    <option value="light">light</option>
+                    <option value="Medium">Medium</option>
+                    <option value="heavy">heavy</option>
+                    
+                </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="medicalEvacuation" >Medical Evacuation:</label>
+                     <select name="medicalEvacuation" id="medicalEvacuation" required>
+                        <option value="" selected disabled>Select Medical Evacuation </option>
+                        <option value="light">light</option>
+                        <option value="Medium">Medium</option>
+                    
+                    
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="travelRank" >Travel Rank:</label>
+                     <select name="travelRank" id="travelRank" required>
+                        <option value="" selected disabled>Select Travel Rank </option>
+                        <option value="Normal">Normal</option>
+                        <option value="VIP">VIP</option>
+                        <option value="VVIP">VIIP</option>
+                    
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="accomodation" >Accomodation:</label>
+                     <select name="accomodation" id="accomodation" required>
+                    <option value="" selected disabled>Choose Accomodation</option>
+                    <option value="Internal">Internal</option>
+                    <option value="External">External</option>
+                    <option value="No Accomodation">No Accomodation</option>
+                    <option value="Waiting Time">Waiting Time</option>
+                </select>
+                </div>
+
+
+                
+                <div class="form-row">
+                    <label for="waitingTime" >Waiting Time:</label>
+                     <select name="waitingTime" id="waitingTime" required>
+                        <option value="" selected disabled>Select Waiting Time </option>
+                        <option value="Normal">Normal</option>
+                        <option value="VIP">VIP</option>
+                        <option value="VVIP">VIIP</option>
+                    
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="internetSpeed" >Internet Speed:</label>
+                     <select name="internetSpeed" id="internetSpeed" required>
+                        <option value="" selected disabled>Select Internet Speed</option>
+                        <option value="Normal">Normal</option>
+                        <option value="VIP">VIP</option>
+                        <option value="VVIP">VIIP</option>
+                    
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="status" >Status:</label>
+                     <select name="status" id="status" required>
+                        <option value="" selected disabled>Choose Status</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        
+                    
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="priority">Priority:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="priority" value="Low" required>Low</label>
+                        <label><input type="radio" name="priority" value="Medium">Medium</label>
+                        <label><input type="radio" name="priority" value="High">High</label>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="documents">Comments:</label>
+                    <input type="file" name="documents" id="documents">
+                </div>
+
+
+                
+
+
+
+
+                
+
+
+                 
+                
+            </div>
+            <div class="btn">
+            <button id="submit-btn" type="submit">Submit</button>
+             </div>    
+        </form>
+        
+      </div>
+
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
