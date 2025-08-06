@@ -1,0 +1,45 @@
+.body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.big-container
+{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    background-color:#212529;
+    height: 600px;
+    /* /* align-items: center; */
+} 
+.container
+{
+    /* background-color:#212529; */
+    margin-top:10px;
+    color: #5A7DFF;
+    text-align: center;
+    
+   
+    
+}
+
+#display-stopWatch
+{
+    font-size: 4rem;
+}
+
+.custom-dark-card {
+  background-color: #343A40; /* dark grey */
+  color: white;
+}
+
+/* Optional: make list items match the card */
+#lap-display .list-group-item {
+    background-color: #343A40; /* dark grey */
+  color: white;
+
+}
+
+
