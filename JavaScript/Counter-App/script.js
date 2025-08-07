@@ -21,9 +21,10 @@ function increment()
 
 function save()
 {
-    combineString=count+" - "
+    let combineString=count+" - "
     saveEL.innerHTML+=combineString
     var1.textContent=0
+    count=0
     console.log(count)
 
     
