@@ -1,16 +1,29 @@
+flatpickr("#dateofBirth", {
+   maxDate: "today",
+   dateFormat: "Y-m-d",
+    allowInput: true,
+    defaultDate: null,
+
+});
+
+
+
+
+
 
 let calculateAgeEl=document.querySelector("#calculate-age")
 let ageparaEl=document.querySelector("#age-para")
 
 calculateAgeEl.addEventListener("click",function()
 {
-     let birthdateInput = document.querySelector("#dateofBirth");
-     let birthdateEl = birthdateInput.valueAsDate;
-     if (!birthdateEl) {
+     let birthdateInput = document.querySelector("#dateofBirth").value
+    //  let birthdateEl = birthdateInput.value
+     if (!birthdateInput) {
       ageparaEl.textContent = "Please select your birth date."
         return;
     }
-    let today=new Date()
+    const birthdateEl = new Date(birthdateInput);
+    const today=new Date()
 
     if (birthdateEl > today) {
         ageparaEl.textContent = "You aren't born yet!";
