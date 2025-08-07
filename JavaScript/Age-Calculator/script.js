@@ -1,12 +1,21 @@
-let birthdateEl=document.querySelector("label[for='dateofBirth'")
-console.log(birthdateEl)
 
 let calculateAgeEl=document.querySelector("#calculate-age")
 let ageparaEl=document.querySelector("#age-para")
+
 calculateAgeEl.addEventListener("click",function()
 {
-    let birthdateEl=document.querySelector("#dateofBirth").valueAsDate
+     let birthdateInput = document.querySelector("#dateofBirth");
+     let birthdateEl = birthdateInput.valueAsDate;
+     if (!birthdateEl) {
+      ageparaEl.textContent = "Please select your birth date."
+        return;
+    }
     let today=new Date()
+
+    if (birthdateEl > today) {
+        ageparaEl.textContent = "You aren't born yet!";
+        return;
+  }
    
     let ageYears=today.getFullYear()-birthdateEl.getFullYear()
     let previousMonthDays=new Date(today.getFullYear(),today.getMonth(),0).getDate()
@@ -15,15 +24,9 @@ calculateAgeEl.addEventListener("click",function()
    
 
 
-     if (!birthdateEl) {
-      ageparaEl.textContent = "Please select your birth date."
-        return;
-    }
+    
 
-    if (birthdateEl > today) {
-        ageparaEl.textContent = "You aren't born yet!";
-        return;
-  }
+    
     //check if your days
     if (ageDays<0)
     {
